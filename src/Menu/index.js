@@ -3,6 +3,7 @@ import {
   Nav,
   NavItem,
   NavLink } from 'reactstrap';
+import { Link } from "react-router-dom";
 import './styles.css';
 import Category from './Category';
 
@@ -38,13 +39,13 @@ class Menu extends Component {
         <p>Popular 2</p>
 
           <NavItem>
-            <NavLink href="#">World</NavLink>
+            <NavLink tag={Link} to="/">World</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#">Music</NavLink>
+            <NavLink tag={Link} to="/components/">Music</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#">Moviews</NavLink>
+            <NavLink tag={Link} to="#">Moviews</NavLink>
           </NavItem>
         </Nav>
         

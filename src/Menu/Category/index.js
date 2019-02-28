@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Nav, NavItem, NavLink } from 'reactstrap';
+import { Link } from "react-router-dom";
 
 class Category extends Component {
 
@@ -8,7 +9,7 @@ class Category extends Component {
     const url = `/category/${id}`;
     return (
       <div>
-        <NavLink href={url}>{name}</NavLink>
+        <NavLink tag={Link} to={url}>{name}</NavLink>
         {subcategories && 
             <Nav vertical>
                 {subcategories.map( (subcategory, i) =>
