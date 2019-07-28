@@ -1,0 +1,13 @@
+.side-menu {
+    position: relative;
+    background-color: white;
+    padding-top: 1rem;
+    box-shadow: 0 0 12px rgba(0,0,0,.08);
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .side-menu {
+        display: block;
+    }
+}

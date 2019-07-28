@@ -1,0 +1,24 @@
+.App .navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    min-height: 80px;
+    border-bottom: 1px solid #e9ecef;
+    .dropdown-menu {
+        margin: 0 -1rem;
+        background: white;
+        border-left: 0;
+        border-right: 0;
+    }
+    .dropdown-item {
+        color: #888888;
+        &:focus {
+            background: #eee;
+        }
+    }
+}
+@media (min-width: 768px) {
+    .navbar-nav * {
+        display: none;
+    }
+}
